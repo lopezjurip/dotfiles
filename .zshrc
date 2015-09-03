@@ -49,7 +49,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git atom bower brew brew-cask bundler django docker encode64 gem git git-extras github go golang gradle grunt heroku mvn meteor nmap node npm osx pip postgres pyenv python rails rake rbenv ruby scala sublime sudo xcode z)
+plugins=(git atom bower brew brew-cask bundler django docker encode64 gem git git-extras github go golang gradle grunt heroku mvn meteor nmap node npm osx pip postgres pyenv python rails rake rbenv ruby scala sublime sudo xcode z zsh-completions zsh-syntax-highlighting)
 
 # User configuration
 
@@ -92,11 +92,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH="/usr/local/sbin:$PATH"
 
-# Zsh complete
-# https://github.com/zsh-users/zsh-completions
-# fpath=(/usr/local/share/zsh-completions $fpath)
-# alias autocomplete="rm -f ~/.zcompdump; compinit"
-plugins+=(zsh-completions)
+# Zsh completions
 autoload -U compinit && compinit
 
 # iTerm2
